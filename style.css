@@ -1,0 +1,23 @@
+.slider {
+    -webkit-appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    /* outline: none; */
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: #a5a4a8;
+    cursor: pointer;
+  }
+   input[type='file'] { font-size: 0;}
+  ::file-selector-button { font-size: initial;
+  height: 40px;
+  width: 144px;
+  } 
+

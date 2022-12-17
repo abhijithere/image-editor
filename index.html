@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Image Editor</title>
+</head> 
+<body class="">
+    <div class="total flex flex-col-reverse min-[800px]:flex-row">
+    <div class="portion-left flex flex-col gap-10 font-light justify-center  items-center h-screen w-screen min-[800px]:w-[390px] min-[900px]:w-[500px] min-[1200px]:w-[620px] bg-black border   border-slate-700 text-white">
+        <h1 class="text-3xl min-[470px]:text-4xl mb-0 min-[470px]:mb-7 ">Image Filters</h1>
+        <div class="g-s">
+            <h1 class="text-md ">Greyscale</h1>
+            <input type="range" name="" id="gs" min="" max=""  value="0" class="slider w-52 min-[350px]:w-72 min-[470px]:w-96 min-[800px]:w-48 min-[900px]:w-64 min-[1200px]:w-80  ">
+        </div>
+        <div class="g-s">
+            <h1 class="text-md ">Blur</h1>
+            <input type="range" name="" id="blr" value="0" class="slider w-52 min-[350px]:w-72 min-[470px]:w-96 min-[800px]:w-48 min-[900px]:w-64 min-[1200px]:w-80 ">
+        </div>
+        <div class="g-s">
+            <h1 class="text-md ">Hue-Rotate</h1>
+            <input type="range" name="" id="hr" value="0" class="slider w-52 min-[350px]:w-72 min-[470px]:w-96 min-[800px]:w-48 min-[900px]:w-64 min-[1200px]:w-80  ">
+        </div>
+        <div class="g-s">
+            <h1 class="text-md ">Sepia</h1>
+            <input type="range" name="" id="spa"  value="0"class="slider w-52 min-[350px]:w-72 min-[470px]:w-96 min-[800px]:w-48 min-[900px]:w-64 min-[1200px]:w-80  ">
+        </div>
+        <div class="g-s">
+            <h1 class="text-md ">Brightness</h1>
+            <input type="range" name="" id="bright" value="100" class="slider w-52 min-[350px]:w-72 min-[470px]:w-96 min-[800px]:w-48 min-[900px]:w-64 min-[1200px]:w-80  ">
+        </div>
+        <button class="rest bg-slate-300 font-normal w-36 h-10 ml-0 min-[470px]:ml-56 min-[800px]:ml-20 min-[1200px]:ml-40 mt-12 text-black hover:bg-slate-400">Reset</button>
+    </div>
+    <div class="portion-right w-screen max-[470px]:pb-20  max-[800px]:pb-24 bg-zinc-800 flex flex-col  items-center ">
+        <div class="upper mt-10 mb-10 text-center flex">
+            <input type="text" placeholder="Enter url of image" class="img-link w-[150px] min-[350px]:w-[210px] min-[470px]:w-[300px] min-[550px]:w-[400px] min-[1000px]:w-[500px] min-[1300px]:w-[600px] h-10 p-3">
+            <button class="img-btn h-10 w-16 min-[350px]:w-24 bg-slate-300 ml-1 hover:bg-slate-400">Enter</button>
+        </div>
+        <div class="edit-sec w-[220px] h-[200px] min-[350px]:w-[310px] min-[350px]:h-[290px] min-[470px]:w-[400px] min-[470px]:h-[400px] min-[550px]:w-[500px]  min-[1000px]:w-[600px] min-[1300px]:w-[700px] min-[550px]:h-[500px] flex justify-center items-center">
+            <img src="img1123.jpg" alt="" class="img-part h-[200px] min-[350px]:h-[290px] min-[470px]:h-[400px] min-[550px]:h-[500px]  rounded-sm" id="imgg">
+        </div>
+        <div class="btn-dn mt-12 ">
+            <input type="file" class="upload absolute opacity-0" id="file">
+            <button class="h-10  w-28w-52 min-[350px]: min-[350px]:w-36 mr-3 bg-slate-300 hover:bg-slate-400">Upload image</button>
+            <button class="download h-10  w-20 min-[350px]:w-24 bg-slate-300 hover:bg-slate-400">Download</button>
+        </div>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
